@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html id="ie7">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<title>Flights Listing / Search</title>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="css/ie.css" />
+    <![endif]-->
+<script type="text/javascript" src="js/modernizr.min.js"></script>
+</head>
+<body id="page-name">
+<div id="container-fluid">
+  <!--header start -->
+  <div id="header-wrap">
+    <div class="container">
+      <header id="header">
+        <div class="row">
+          <div class="col-xs-6">
+            <div id="header-left"> <a href="#"><img src="images/logo.jpg" alt=""></a> </div>
+          </div>
+          <div class="col-xs-6">
+            <div id="header-right">
+              <select class="form-control">
+                <option>Australia</option>
+                <option>Australia</option>
+                <option>Australia</option>
+                <option>Australia</option>
+                <option>Australia</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+  <!--header end -->
+  <!--navigation start -->
+  <div id="nav-wrap">
+    <div class="container">
+      <div id="nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Car Hire</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Manage An Exiting Bookings</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--navigation end -->
+  <!-- about start -->
+  <div id="contact-wrap">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="#">United States</a> </li>
+        <li class="active">New York City Flights</li>
+      </ul>
+      <h3 class="booking-title">12 Flights from London to New York on Mar 22 for 1 adult <small><a href="#modal1" class="modal-trigger waves-effect waves-light btn">Modal</a></small></h3>
+      <div class="row">
+        <div class="col-md-3">
+          <aside class="booking-filters text-white">
+            <h3>Filter By:</h3>
+            <ul class="list booking-filters-list">
+              <li>
+                <h5 class="booking-filters-title">Stops <small>Price from</small></h5>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Non-stop<span class="pull-right">$215</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  1 Stop<span class="pull-right">$154</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  2+ Stops<span class="pull-right">$197</span> </label>
+                </div>
+              </li>
+              <li>
+                <h5 class="booking-filters-title">Price </h5>
+                <input type="text" id="price-slider">
+              </li>
+              <li>
+                <h5 class="booking-filters-title">Flight Class <small>Price from</small></h5>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Economy<span class="pull-right">$154</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Business<span class="pull-right">$316</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  First<span class="pull-right">$450</span> </label>
+                </div>
+              </li>
+              <li>
+                <h5 class="booking-filters-title">Airlines <small>Price from</small></h5>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Lufthansa<span class="pull-right">$215</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  American Airlines<span class="pull-right">$350</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Airfrance<span class="pull-right">$154</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Croatia Airlines<span class="pull-right">$197</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Delta<span class="pull-right">$264</span> </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Air Canada<span class="pull-right">$445</span> </label>
+                </div>
+              </li>
+              <li>
+                <h5 class="booking-filters-title">Departure Time</h5>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Morning (5:00a - 11:59a)</label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Afternoon (12:00p - 5:59p)</label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" class="i-check">
+                  Evening (6:00p - 11:59p)</label>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-md-9">
+          <div class="nav-drop booking-sort">
+            <h5 class="booking-sort-title"><a href="#">Sort: Sort: Price (low to high)<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a></h5>
+            <ul class="nav-drop-menu">
+              <li><a href="#">Price (high to low)</a> </li>
+              <li><a href="#">Duration</a> </li>
+              <li><a href="#">Stops</a> </li>
+              <li><a href="#">Arrival</a> </li>
+              <li><a href="#">Departure</a> </li>
+            </ul>
+          </div>
+          <ul class="booking-list">
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide1.jpg">
+                        <p>Croatia Airlines</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>1 stop</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$270</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Economy</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide2.jpg">
+                        <p>Delta</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>2 stops</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$298</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Economy</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide1.jpg">
+                        <p>Airfrance</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>2 stops</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$209</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Economy</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide2.jpg">
+                        <p>American Airlines</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>non-stop</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$452</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Business</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide1.jpg">
+                        <p>Lufthansa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>non-stop</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$290</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Economy</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide2.jpg">
+                        <p>Airfrance</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>2 stops</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$469</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: First</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide1.jpg">
+                        <p>Lufthansa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>1 stop</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$265</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Business</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide2.jpg">
+                        <p>American Airlines</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>2 stops</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$151</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: Economy</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide1.jpg">
+                        <p>American Airlines</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>2 stops</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$346</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: First</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/template/images/slide2.jpg">
+                        <p>Air Canada</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>non-stop</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$307</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: First</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="booking-item-container">
+                <div class="booking-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="booking-item-airline-logo"> <img title="Image Title" alt="Image Alternative text" src="http://localhost/airbornecentre.com.au/img/lufthansa.jpg">
+                        <p>Lufthansa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="booking-item-flight-details">
+                        <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                          <h5>10:25 PM</h5>
+                          <p class="booking-item-date">Sun, Mar 22</p>
+                          <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                        </div>
+                        <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                          <h5>12:25 PM</h5>
+                          <p class="booking-item-date">Sat, Mar 23</p>
+                          <p class="booking-item-destination">New York, NY, United States (JFK)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>22h 50m</h5>
+                      <p>non-stop</p>
+                    </div>
+                    <div class="col-md-3"><span class="booking-item-price">$397</span><span>/person</span>
+                      <p class="booking-item-flight-class">Class: First</p>
+                      <a href="#" class="btn btn-primary">Select</a> </div>
+                  </div>
+                </div>
+                <div class="booking-item-details">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <p>Flight Details</p>
+                      <h5 class="list-title">London (LHR) to Charlotte (CLT)</h5>
+                      <ul class="list">
+                        <li>US Airways 731</li>
+                        <li>Economy / Coach Class ( M), AIRBUS INDUSTRIE A330-300</li>
+                        <li>Depart 09:55 Arrive 15:10</li>
+                        <li>Duration: 9h 15m</li>
+                      </ul>
+                      <h5>Stopover: Charlotte (CLT) 7h 1m</h5>
+                      <h5 class="list-title">Charlotte (CLT) to New York (JFK)</h5>
+                      <ul class="list">
+                        <li>US Airways 1873</li>
+                        <li>Economy / Coach Class ( M), Airbus A321</li>
+                        <li>Depart 22:11 Arrive 23:53</li>
+                        <li>Duration: 1h 42m</li>
+                      </ul>
+                      <p>Total trip time: 17h 58m</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p class="text-right">Not what you're looking for? <a data-effect="mfp-zoom-out" href="#search-dialog" class="popup-text">Try your search again</a> </p>
+        </div>
+      </div>
+      <div class="gap"></div>
+    </div>
+  </div>
+  <!-- contact end -->
+  <!--footer start -->
+  <div id="footer-wrap">
+    <div class="container">
+      <footer id="footer">
+        <div class="footer-link">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12">
+              <ul class="right-link">
+                <li><b>Air Borne</b> Links</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Airport Guides</a></li>
+                <li><a href="#">Travel Guides</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <ul class="flight-sec">
+                <li>Flights Deals</li>
+                <li><a href="#">Flights to Asia</a></li>
+                <li><a href="#">Flights to Oceania</a></li>
+                <li><a href="#">Flights to Europe</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <ul class="flight-sec">
+                <li>Travel Resources</li>
+                <li><a href="#">Airlines</a></li>
+                <li><a href="#">Airport Guides</a></li>
+                <li><a href="#">Special Offers</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <ul class="flight-sec">
+                <li>Need Help</li>
+                <li>Email <a href="#"> info[@]airbrone.co.uk</a></li>
+                <li>Customer Support</li>
+                <li>123 456 7890</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="stay">
+          <h3>Stay With Us</h3>
+          <ul>
+            <li><img src="images/fb.png" alt=""><a href="#">facebook</a></li>
+            <li><img src="images/tw.png" alt=""><a href="#">twitter</a></li>
+            <li><img src="images/g.png" alt=""><a href="#">google plus</a></li>
+            <li><img src="images/in.png" alt=""><a href="#">linkedin</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div id="copy-right-wrap">
+    <div class="container">
+      <div id="copy-right">
+        <p>©Copyright 2015 AirBrone. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!--footer end -->
+</div>
+<!--container-fluid -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
